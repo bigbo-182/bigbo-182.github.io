@@ -113,7 +113,7 @@ analytics:
 # Site Author
 author:
   name             : "DAEBO SIM"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/bio-photo.jpg"   # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "dev blog"
   location         : "South Korea"
   # email            : "tlaeoqh12@naver.com"
@@ -262,6 +262,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-redirect-from
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -270,6 +271,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-redirect-from
 
 
 # Archives
@@ -309,7 +311,7 @@ compress_html:
     envs: development
 
 
-# Defaults
+# Defaults 설정
 defaults:
   # _posts
   - scope:
@@ -323,5 +325,9 @@ defaults:
       share: true
       related: true
       show_date: true
+      toc_sticky: true
+      toc_label: "On this page"
+      # toc_icon:"fas 
+      author_profile: false # 왼쪽 프로파일 toggle
 
 date_format: "%Y-%m-%d"
